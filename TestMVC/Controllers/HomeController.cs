@@ -13,8 +13,8 @@ namespace TestMVC.Controllers
         {
             var model = new myclass
             {
-                title = "t",
-                body = "b"
+                title = "title",
+                body = "body"
             };
 
             return View(model);
