@@ -16,7 +16,15 @@ namespace TestMVC.Controllers
                 title = "title",
                 body = "body"
             };
-
+            return View(model);
+        }
+        public ActionResult ChildAction()
+        {
+            var model = new myclass
+            {
+                title = "ChildAction:title",
+                body = "ChildAction:body"
+            };
             return View(model);
         }
 
