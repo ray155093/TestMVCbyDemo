@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestMVC.Models;
 
 namespace TestMVC.Controllers
 {
@@ -10,7 +11,13 @@ namespace TestMVC.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new myclass
+            {
+                title = "t",
+                body = "b"
+            };
+
+            return View(model);
         }
 
         public ActionResult About()
