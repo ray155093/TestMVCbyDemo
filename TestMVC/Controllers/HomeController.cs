@@ -18,6 +18,7 @@ namespace TestMVC.Controllers
             };
             return View(model);
         }
+        [ChildActionOnly]
         public ActionResult ChildAction()
         {
             var model = new myclass
